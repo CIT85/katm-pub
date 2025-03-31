@@ -1,0 +1,31 @@
+html {
+    font-size: 18px
+}
+
+body {
+    background-color: #4d0772;
+    color: rgb(225, 166, 88);
+}
+
+h2 {
+    color: #34dc40;
+}
+
+h3 {
+    color: rgb(228, 116, 37);
+}
+
+dl {
+    color: aqua;
+}
+a {
+    color: rgb(232, 68, 164);
+}
+
+a:visited {
+    color: rgb(222, 154, 179);
+}
+
+a:hover, a:active {
+    color:#efed7e;
+}
