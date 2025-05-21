@@ -298,7 +298,14 @@ img {
     height: auto;
     display:inline-block;
 }
-
+form {
+    background-color: #ed8cad;
+    border: 2rem double #024624;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2rem auto;
+    color: #024624;
+}
 
 /* || MOBILE */
 @media screen and (max-width: 481px) {
@@ -421,8 +428,6 @@ img {
 /* WHAT ROW EACH ELEMENT IS IN :) */
 
 
-}
-
 /* || TABLET */
 @media screen and (min-width: 482px) and (max-width: 767px) {
     body {
@@ -532,7 +537,7 @@ header h2 {
 }
 
 /* || DESKTOP */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     body {
         background-image: radial-gradient(rgb(192, 249, 255), #ed8cad);
     }
@@ -562,7 +567,6 @@ header h2 {
             font-size: 1.5rem;
             z-index: 1;
         }
-    
         .sitemap {
             position: fixed;
             bottom: 6rem;
@@ -575,5 +579,4 @@ header h2 {
             font-size: 1.5rem;
             z-index: 1;
         }
-    
-}
+    }
