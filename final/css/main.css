@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:#ed8cad;
+    background-image: radial-gradient(rgb(192, 249, 255),#ed8cad );
+    color: #024624;
+    font-family: "Agbalumo", system-ui;
+    line-height: 1.5;
+    margin: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+/* added different fonts for body and header elements because I like the style for the headers but it might be irritating to read in longer paragraphs. The princess sofia has to be pretty thick to read properly */
+h1, h2, h3{
+    font-family:"Princess Sofia", cursive;
+    font-weight: 1000;
+    letter-spacing: 0.07rem;
+}
+
+h3, h2 {
+    font-size: 3rem;
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+
+}
+/* the h3 elements were a bit too small for my liking */
+
+h1, header h2 {
+    text-decoration: none;
+}
+
+header { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: pink;
+    border: 0.3rem solid #024624;
+    z-index: 1;
+    top: 0;
+}
+
+.logo {
+    border-radius: 3rem;
+}
+
+img {
+    border-radius: 4rem;
+}
+
+figcaption {
+    font-size: small;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav {
+    text-align: center;
+    border: 0.5rem double #024624;
+    border-radius: 3rem;
+    background-color: #e5f2f3;
+    list-style: none;
+    margin: 1rem auto;
+    max-width: 1000px;
+    padding: 1rem;
+    }
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+.nav li:first-child {
+    font-family: "Princess Sofia", cursive;
+    font-weight: 1000;
+    font-size: 2.3rem;
+
+}
+a:link {
+    color: #792479;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #7d3883;
+}
+
+a:hover {
+    color: #db31bf;
+}
+
+a:focus {
+    color: red;
+}
+/* SECTION ONE */
+.main-topic {
+    display: grid;
+    grid-template-rows: 15% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
+}
+
+.main-topic h2 {
+    grid-column-start: 1; /* H2 ELEMENT SPANS ENTIRE TOP ROW */
+    grid-column-end: 3;
+}
+
+.main-topic p {
+    grid-row-start: 1.5;
+    grid-row-end:4 ;
+}
+.main-topic p.alone {
+    grid-row-start: 2; /* using this grid for my alone page too  */
+    grid-row-end:4 ;
+}
+
+.main-topic .image {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+/* SECTION TWO */
+.list-topic {
+    display: grid;
+    grid-template-rows: 15% 25% 25% 25%; /* I USED PERCENTAGES BECAUSE IT FEELS EASIER TO CONTROL */
+    grid-template-columns: 50% 50%;
+}
+
+.list-topic h3 {
+    grid-column-start: 1; /* H2 ELEMENT USED TO SPAN TOP LEFT OVER DL, BUT I HATED IT*/
+    grid-column-end: 3;
+}
+
+.list-topic dl {
+    grid-row-start: 2;
+    grid-row-end:4 ;
+    grid-row-end: 4;
+    grid-column-start: 2;
+}
+
+.list-topic .image {
+    grid-row-start: 2;
+
+}
+
+/* SECTION THREE W/TABLE */
+.trade {
+    display: grid;
+    grid-template-rows: 15% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
+}
+
+.trade h3 {
+    grid-column-start: 1; /* H3 ELEMENT SPANS ENTIRE TOP ROW */
+    grid-column-end: 3;
+}
+
+.trade table {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.trade .image {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+
+table, th, td {
+    border: 2px dashed #024624;
+    border-collapse: collapse;
+    background-color: #e5f2f3;
+}
+
+table {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+th {
+    font-size: 1.5rem;
+}
+
+/* FLEXED FOOTER SECTION */
+.foot {
+    background-color: #e5f2f3;
+    padding: 2rem;
+    margin: 1rem auto;
+    text-align: left;
+    border: 0.5rem double #024624;
+    border-radius: 3rem;
+    display: flex;
+    justify-content:center;
+}
+
+.contactlist {
+    flex: 0.7;
+}
+.contactlist li {
+    list-style: none;
+}
+
+
+
+
+.main-backround {
+    background-color: #ed8cad;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+
+.main-font {
+    background-color: #024624;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+
+.link-color {
+    background-color: #792479;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+
+.nav-backround {
+    background-color: #e5f2f3;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+
+.link-hover {
+    background-color: #db31bf;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+.header-color {
+    background-color: pink;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+
+dt {
+    text-decoration: underline;
+    color: #792479;
+    text-align: left;  /* Some decoration for dt  */
+}
+
+dl dd {
+    text-align: center;
+    border: 0.5rem double #024624;
+    border-radius: 2rem;
+    background-color: pink;
+    list-style: none;
+    margin: 1rem auto;
+    max-width: 1000px;
+    padding: 1rem;
+}
+
+img {
+    height: auto;
+    display:inline-block;
+}
+
+
+/* || MOBILE */
+@media screen and (max-width: 481px) {
+    body {
+        background-image: radial-gradient(#ed8cad, rgb(192, 249, 255));
+        font-size: 2rem;
+    }
+/* TO ALIGN THE HEADER IN THE CENTER AND IT WONT FOLLOW YOU AS YOU SCROLL */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        position: static;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+/* SO IT FITS ON THE PAGE WITHOUT LOOKING TOO WEIRD */
+    header h2 {
+        font-size: 1.5rem;
+    }
+/* TO SPACE THE LIST ITEMS OUT INTO INDIVIDUAL ITEMS */
+    nav {
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    nav ul li {
+        padding: 0.9rem;
+        border: 0.5rem dotted pink;
+        border-radius: 5rem;
+    }
+    .nav li:first-child {
+        border: none;
+    }
+
+/* GRID FOR MAIN TOPIC */
+    .main-topic {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 1rem;
+        text-align: center;
+    }
+/* WHAT ROW EACH ELEMENT IS IN :) */
+    .main-topic h2 {
+        grid-row: 1/2;
+    }
+    .main-topic p {
+        grid-row: 2/3;
+    }
+    .main-topic .image {
+        grid-row: 3/4;
+    }
+/* TO RESIZE IMAGE FOR SMALLER SCREEN */
+   .main-topic .image img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    } 
+
+    .list-topic {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+    }
+/* WHAT ROW EACH ELEMENT IS IN :) */
+    .list-topic h3 {
+        grid-row: 1/2;
+    }
+    .list-topic dl {
+        grid-row: 2/3;
+    }
+    .list-topic .image {
+        grid-row: 3/4;
+    }
+    .list-topic h3,
+    .list-topic .homedl,
+    .list-topic .image {
+         grid-column: 1;
+    }
+
+/* TO RESIZE ALL IMAGES FOR SMALLER SCREEN */
+    img {
+        width: 75%;
+        height: auto;
+        margin: 0 auto;
+    } 
+    
+    .trade {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+    }
+/* WHAT ROW EACH ELEMENT IS IN :) */
+    .trade h3 {
+        grid-row: 1/2;
+    }
+    .trade table {
+        grid-row: 2/3;
+    }
+    .trade .image {
+        grid-row: 3/4;
+    }
+    .trade h3,
+    .trade table,
+    .trade .image {
+         grid-column: 1;
+    }
+    .foot {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+    }
+/* WHAT ROW EACH ELEMENT IS IN :) */
+
+
+}
+
+/* || TABLET */
+@media screen and (min-width: 482px) and (max-width: 767px) {
+    body {
+        background-image: radial-gradient(rgb(192, 249, 255), #e248b19f);
+        font-size: 1.5rem;
+    }
+/* SO IT FITS ON THE PAGE WITHOUT LOOKING TOO WEIRD */
+header h2 {
+    font-size: 1.5rem;
+}
+/* TO ALIGN THE HEADER IN THE CENTER AND IT WONT FOLLOW YOU AS YOU SCROLL */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        position: static;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+/* TO MAKE SPACE BETWEEN THE NAV AND THE HEADER */
+        nav {
+            margin-top: 3rem;
+        }
+/* TO CHANGE ALL IMAGE SIZES TO FIT THE PAGE (EXCEPT LOGO IMAGE) */
+    .image img {
+        width: 69%;
+        height: auto;
+        margin: 0 auto;
+        }
+/* MAIN TOPIC SECTION    */
+    .main-topic {
+        display: grid;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        grid-template-columns: 50% 50%;
+    }
+    .main-topic h2 {
+        grid-column-start: 1;
+        grid-column-end: 3; /* H2 ELEMENT SPANS ENTIRE TOP ROW */
+    }
+        
+    .main-topic p {
+        grid-row-start: 2;
+        grid-row-end: 4;       
+    }
+    .main-topic .image {
+        grid-row-start: 2;
+        grid-row-end: 4;   
+    }
+
+/* LIST TOPIC SECTION */
+.list-topic {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+}
+
+/* WHAT ROW EACH ELEMENT IS IN :) */
+.list-topic h3 {
+    grid-row: 1/2;
+}
+
+.list-topic dl {
+    grid-row: 2/3;
+}
+
+.list-topic .image {
+    grid-row: 3/4;
+}
+
+.list-topic h3,
+.list-topic .homedl,
+.list-topic .image {
+    grid-column: 1;
+}
+
+/* TRADE SECTION */
+.trade {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+}
+
+/* WHAT ROW EACH ELEMENT IS IN :) */
+.trade h3 {
+    grid-row: 1/2;
+}
+
+.trade table {
+    grid-row: 2/3;
+}
+
+.trade .image {
+    grid-row: 3/4;
+}
+
+.trade h3,
+.trade table,
+.trade .image {
+    grid-column: 1;
+}
+}
+
+/* || DESKTOP */
+@media screen and (min-width: 768px){
+    body {
+        background-image: radial-gradient(rgb(192, 249, 255), #ed8cad);
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: pink;
+        border: 0.3rem solid #024624;
+        z-index: 1;
+        position: sticky;
+        top: 0;
+    }
+
+        .silly-button {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            background-color: #e5f2f3;
+            border: 1rem double;
+            border-radius: 1rem;
+            text-decoration: none;
+            font-weight: 1000;
+            font-size: 1.5rem;
+            z-index: 1;
+        }
+    
+        .sitemap {
+            position: fixed;
+            bottom: 6rem;
+            right: 1.5rem;
+            background-color: #e5f2f3;
+            border: 1rem double;
+            border-radius: 1rem;
+            text-decoration: none;
+            font-weight: 1000;
+            font-size: 1.5rem;
+            z-index: 1;
+        }
+    
+}
