@@ -132,3 +132,9 @@
     - linked other related pages in the other dt
     - Changed dd to match linked page on index.html
     - added p, image, aside, and footer
+## Hero Image Design
+    - I chose this image because its cute and it fits the rest of the images for the website
+    - I gave the text its own backround so that its visible with the image still behind it
+    - it appears on the contact.html page
+    - I made the body of the page have a semi-transparent backround so the text is still legible but you can still clearly see the image behind it.
+    

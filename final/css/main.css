@@ -306,6 +306,22 @@ form {
     margin: 2rem auto;
     color: #024624;
 }
+.hero {
+    background-image: url('/img/hero-girl.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contactpage{
+    background-image:radial-gradient(#ed8cac8f, rgba(192, 249, 255, 0.657));
+}
+.hero header {
+    background-color: rgba(255, 192, 203, 0.683);
+}
+
+.hero nav {
+    
+}
 
 /* || MOBILE */
 @media screen and (max-width: 481px) {
