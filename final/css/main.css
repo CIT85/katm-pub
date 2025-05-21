@@ -313,14 +313,10 @@ form {
     background-repeat: no-repeat;
 }
 .contactpage{
-    background-image:radial-gradient(#ed8cac8f, rgba(192, 249, 255, 0.657));
+    background-image:radial-gradient(#ed8cac8f, rgba(192, 249, 255, 0.792));
 }
 .hero header {
     background-color: rgba(255, 192, 203, 0.683);
-}
-
-.hero nav {
-    
 }
 
 /* || MOBILE */
@@ -441,6 +437,7 @@ form {
         grid-template-rows: auto auto auto;
         text-align: center;
     }
+}
 /* WHAT ROW EACH ELEMENT IS IN :) */
 
 
